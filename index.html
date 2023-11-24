@@ -1,0 +1,262 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Baked Alchemy</title>
+    <style>
+    
+    body 
+    {
+      background-color: #F5F5DC;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #logo 
+    {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+      z-index: 2;
+    }
+    
+    #logo p 
+    {
+      text-align: right;
+      font-family: "Lobster", cursive;
+      font-size: 35px;
+      margin-left: 500px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    #logo img 
+    {
+      width: 500px;
+      height: auto;
+      margin-top: -50px;
+      margin-left: -75px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    #logo p a 
+    {
+      transition: transform 0.3s ease-in-out;
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    
+    #logo p a:hover 
+    {
+      transform: scale(1.2); 
+    }
+    
+    #background 
+    {
+      background-image: url('https://i.pinimg.com/564x/9a/e8/3d/9ae83d7fb1f9efc4f69673f430855df2.jpg');
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 140px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 140px);
+      z-index: 3;
+    }
+    
+    #menu 
+    {
+      background-color: #E3C283;
+      padding: 20px;
+      font-family: 'Pacifico', cursive;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 757px;
+    }
+    
+    #menu h1 
+    {
+      font-size: 50px;
+      margin: 0;
+      text-align: left;
+    }
+    
+    #menu h2 
+    {
+      font-size: 35px;
+    }
+    
+    .menu 
+    {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .menu-column 
+    {
+      width: calc(33.33% - 20px);
+      padding: 0 10px;
+      text-align: left;
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+    
+    .menu-column ul 
+    {
+      list-style-type: disc;
+      text-align: left;
+    }
+    
+    #about 
+    {
+      margin-top: -20px;
+      background-color: #342F25;
+      text-align: left;
+      font-family: "Lato", sans-serif;
+      font-size: 20px;
+      color: #FFFFFF;
+      padding: 20px;
+    }
+    
+    #about h3 
+    {
+      font-size: 50px;
+    }
+
+    </style>
+    
+    <script>
+    // Create a new <a> element for the Curriculum Vitae button
+      const cvLink = document.createElement('a');
+      cvLink.href = "#cv"; // Set the href attribute for the button
+      // Set the button text and style
+      cvLink.textContent = "Curriculum Vitae";
+      cvLink.style.marginRight = "10px"; // Add some margin to separate it from other links
+
+      // Find the <span> element where the button will be placed
+        const cvButtonContainer = document.getElementById('cvButton');
+        
+      // Insert the Curriculum Vitae button into the <span> element
+        cvButtonContainer.appendChild(cvLink);
+    </script>
+
+
+  </head>
+
+  <body>
+    <div id="logo">
+      <img src="https://i.pinimg.com/564x/73/ed/21/73ed21351b740ee3ad1821759657119c.jpg">
+      <p>
+        <a href="#menu">Menu</a> |
+        <a href="https://i.pinimg.com/736x/b7/e7/e3/b7e7e383d58a3ecb2d3f855724696b7f.jpg" target="_blank">Curriculum Vitae</a> |
+        <a href="#about">About</a> |
+        <a href="#order">Order Now</a>
+      </p>
+    </div>
+    
+    <div id="background"></div>
+    
+    <h1 id="menu">Welcome to Baked Alchemy - Satisfy Your Cravings!
+      <hr style="border-top: 3px solid black;">
+      <div class="menu">
+        <div class="menu-column">
+          <h2>Breads and Pastries</h2>
+          <ul>
+            <li>Freshly Baked Baguettes</li>
+            <li>Flaky Croissants</li>
+            <li>Soft Dinner Rolls</li>
+            <li>Decadent Danish Pastries</li>
+            <li>Gourmet Cinnamon Rolls</li>
+          </ul>
+        </div>
+        <div class="menu-column">
+          <h2>Cakes and Desserts</h2>
+          <ul>
+            <li>Signature Chocolate Cake</li>
+            <li>Creamy Cheesecakes</li>
+            <li>Fruit-filled Tarts</li>
+            <li>Irresistible Cupcakes</li>
+            <li>Artisan Macarons</li>
+          </ul>
+        </div>
+        <div class="menu-column">
+          <h2>Cookies and Brownies</h2>
+          <ul>
+            <li>Classic Chocolate Chip</li>
+            <li>Double Fudge Brownies</li>
+            <li>Oatmeal Raisin Delights</li>
+            <li>Sugar Butter Cookies</li>
+            <li>Vegan & Gluten-Free Options</li>
+          </ul>
+        </div>
+      </div>
+      <hr style="border-top: 3px solid black;">
+      <div class="menu">
+        <div class="menu-column">
+          <h2>Beverages</h2>
+          <ul>
+            <li>Freshly Brewed Coffee</li>
+            <li>Specialty Teas</li>
+            <li>Iced Coffee and Tea</li>
+            <li>Hot Chocolate</li>
+            <li>Seasonal Drinks</li>
+          </ul>
+        </div>
+        <div class="menu-column">
+          <h2>Custom Orders</h2>
+          <ul>
+            <li>Custom Cakes</li>
+            <li>Catering Services</li>
+            <li>Wedding and Event Desserts</li>
+            <li>Gift Baskets</li>
+            <li>Party Platters</li>
+          </ul>
+        </div>
+        <div class="menu-column">
+          <h2>Seasonal Specials</h2>
+          <ul>
+            <li>Holiday Pies</li>
+            <li>Spooky Halloween Treats</li>
+            <li>Festive Christmas Cookies</li>
+            <li>Springtime Delights</li>
+            <li>Summer Sweet Surprises</li>
+          </ul>
+        </div>
+      </div>
+      <hr style="border-top: 3px solid black;">
+    </h1>
+    
+    <div id="about">
+      <h3>About Us</h3>
+      <hr>
+      <h2>Crafting Delightful Moments at Baked Alchemy</h2>
+      <p>Welcome to Baked Alchemy, where we blend passion, tradition, and creativity to craft a symphony of flavors that awaken the senses and create memorable moments. Our journey is one of culinary expertise, rooted in a deep love for the art of baking. Here, we'd like to introduce ourselves, sharing the heart and soul behind the tantalizing treats that grace your tables.</p>
+      <hr>
+      <h2>Our Story</h2>
+      <p>Baked Alchemy was born out of a shared dream among a group of expert bakers and pastry artists who believe that exceptional baked goods can do more than just satiate hunger; they can create moments of pure delight. Our story began in 1996, and since then, we've been on a relentless quest to perfect the art of baking.</p>
+      <hr>
+      <h2>A Symphony of Flavors</h2>
+      <p>At Baked Alchemy, we understand that the joy of baking lies not only in the process but in the result: the flavors, textures, and aromas that captivate your senses. Our team of skilled bakers, armed with time-honored techniques and a commitment to quality, work tirelessly to bring you an array of delectable pastries, artisan bread, cakes, and more. Every product that leaves our ovens is a labor of love and a testament to our dedication.</p>
+      <hr>
+      <h2>The Baked Alchemy Experience</h2>
+      <p>When you step into our bakery or place an order through our website, you're not just getting baked goods; you're embracing an experience. It's the anticipation as you watch our bakers at work, the warm, comforting aroma that greets you, and the moment you take that first, unforgettable bite. Each visit to Baked Alchemy is an opportunity to savor life's sweet moments.</p>
+      <hr>
+      <h2>Our Commitment</h2>
+      <p>Quality, creativity, and customer satisfaction are the cornerstones of our bakery. We source the finest ingredients, from farm-fresh produce to the richest cocoa, to ensure that every creation is a masterpiece. Whether you're celebrating a special occasion, sharing a meal with loved ones, or simply indulging in a personal treat, we're here to make it extraordinary.</p>
+      <hr>
+      <h2>Join Us on Our Journey</h2>
+      <p>Baked Alchemy is not just about us; it's about the shared joy of savoring life's sweet moments together. We invite you to join us on this delectable journey. Connect with us through our website, social media, or visit our physical location. Share your stories, your cravings, and your feedback because it's your experiences that inspire us to keep baking with love and creativity.</p>
+      <hr>
+      <p>Thank you for being a part of the Baked Alchemy family. We look forward to crafting delightful moments for you, one treat at a time.</p>
+      <hr>
+    </div>
+    
+    <script src="script.js"></script>
+
+  </body>
+
+  </html>
